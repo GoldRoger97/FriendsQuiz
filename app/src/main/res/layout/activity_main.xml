@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/middlebalck"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="185dp"
+        android:layout_height="58dp"
+        android:text="QuizoEzo"
+        android:textStyle="bold"
+        android:textSize="23dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <TextView
+        android:id="@+id/textViewHighscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="high score:0"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:layout_above="@+id/start_quizzz"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/start_quizzz"
+        android:layout_width="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Start quiz"/>
+
+    <Spinner
+        android:id="@+id/Difficulty_Spiner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start_quizzz"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"
+        >
+
+    </Spinner>
+</RelativeLayout>
